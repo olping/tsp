@@ -4,6 +4,6 @@
 
 object Karte {
 
-  
+
 
 }
