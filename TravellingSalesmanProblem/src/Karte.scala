@@ -13,8 +13,10 @@ object Karte {
 
     require(x>=0 && y>=0)
 
+
     def distance(that:P):Double =
       sqrt( pow(this.x-that.x, 2) + pow(this.y-that.y, 2) )
+
 
     override def toString = "( "+x+" | "+y+" )"
 
