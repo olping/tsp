@@ -1,11 +1,10 @@
 
-import TravellingSalesmanProblem.Karte.P
+import TravellingSalesmanProblem.Karte._
 import scala.util.Random.nextInt
 
 object test {
 
   def makePs(x: Int, y: Int, n: Int): Array[P] = {
-
     var a: Array[P] = new Array(n)
 
     def randx = nextInt(x + 1) // 0 through x
@@ -32,8 +31,7 @@ object test {
   }
 
   def sortNearest(a: Array[P]): Array[P] = {
-
-    var l: List[P] = Nil
+    var l: Array[P] = Array()
     l :+= a(0)
 
     while (l.length < a.length) {
@@ -48,7 +46,7 @@ object test {
       l :+= a(index)
     }
 
-    l.toArray
+    l
   }
 
 
